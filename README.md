@@ -128,43 +128,48 @@ The VM running Jenkins must have the **.NET SDK** installed (e.g., via `apt`, `y
   - Collects and publishes test results in Jenkins UI.  
   - Archives build artifacts for later use/retrieval.  
 
-
-```groovy
+```groovy 
 pipeline {
-    agent any
+    agent any   // Run this pipeline on any available Jenkins agent (or the master node if no agents exist)
 
     tools {
-        // optional: if using MSBuild plugin for older .NET Framework
+        // Define external build tools if needed (example: MSBuild for .NET Framework projects)
         // msbuild 'MSBuild-16.0'
     }
 
     stages {
         stage('Checkout') {
             steps {
+                // Pull code from your Git repository (replace with your on-prem Git server)
                 git branch: 'main', url: 'http://<your-git-server>/your-dotnet-repo.git'
             }
         }
 
         stage('Restore Dependencies') {
             steps {
+                // Restore NuGet packages / dependencies from your project configuration
                 sh 'dotnet restore'
             }
         }
 
         stage('Build') {
             steps {
+                // Compile the .NET project in Release configuration
                 sh 'dotnet build --configuration Release'
             }
         }
 
         stage('Test') {
             steps {
+                // Run unit tests (without rebuilding since we already did that in the Build stage)
                 sh 'dotnet test --no-build --configuration Release'
             }
         }
 
         stage('Publish') {
             steps {
+                // Package the application for deployment
+                // Output is placed into a ./publish folder
                 sh 'dotnet publish -c Release -o ./publish'
             }
         }
@@ -172,7 +177,8 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 echo 'Deploying .NET app to staging server...'
-                // Example deployment step (adjust paths/servers as needed)
+                // Copy the published files to the staging environment (via SCP in this example)
+                // Adjust path, server, and credentials to match your infrastructure
                 sh 'scp -r ./publish/* user@staging-server:/var/www/my-dotnet-app/'
             }
         }
@@ -180,8 +186,13 @@ pipeline {
 
     post {
         always {
-            junit '**/TestResults/*.xml'   // capture test results if available
+            // Capture and store test results so they show up in Jenkins UI
+            junit '**/TestResults/*.xml'
+
+            // Archive the published output files as build artifacts
+            // Jenkins keeps these for later retrieval/verification
             archiveArtifacts artifacts: 'publish/**', fingerprint: true
         }
     }
 }
+
