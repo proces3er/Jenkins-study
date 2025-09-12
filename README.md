@@ -102,6 +102,33 @@ Since our Jenkins instance is **offline**, we need to prepare plugins and depend
 This pipeline builds, tests, and deploys a .NET application.  
 The VM running Jenkins must have the **.NET SDK** installed (e.g., via `apt`, `yum`, or manual download).  
 
+
+## Pipeline Stage Overview
+
+- **Checkout**  
+  Pulls source code from the Git repository.  
+
+- **Restore Dependencies**  
+  Downloads NuGet packages required for the build.  
+
+- **Build**  
+  Compiles the application in `Release` mode.  
+
+- **Test**  
+  Runs unit and/or integration tests to validate code.  
+
+- **Publish**  
+  Prepares build output for deployment (publishes to a `./publish` folder).  
+
+- **Deploy to Staging**  
+  Copies the published files to the staging server (example uses `scp`).  
+
+- **Post Section**  
+  Always runs after the pipeline (success or failure).  
+  - Collects and publishes test results in Jenkins UI.  
+  - Archives build artifacts for later use/retrieval.  
+
+
 ```groovy
 pipeline {
     agent any
