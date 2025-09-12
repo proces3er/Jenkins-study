@@ -2,8 +2,6 @@
 
 
 
-# Welcome to Jenkins
-
 ![Jenkins Logo](https://www.jenkins.io/images/logos/sydney/sydney.png)
 
 ---
