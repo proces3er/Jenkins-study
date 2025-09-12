@@ -99,57 +99,64 @@ Since our Jenkins instance is **offline**, we need to prepare plugins and depend
 
 ---
 
-## Example: Jenkins Declarative Pipeline (Jenkinsfile)
+## Example: Jenkins Pipeline (Jenkinsfile) – .NET Project
 
-This is an example pipeline (`Jenkinsfile`) for building, testing, and deploying a Java application with Maven.
+This pipeline builds, tests, and deploys a .NET application.  
+The VM running Jenkins must have the **.NET SDK** installed (e.g., via `apt`, `yum`, or manual download).  
 
 ```groovy
 pipeline {
     agent any
 
     tools {
-        maven 'Maven-3.8.6'   // configured under Global Tool Configuration
-        jdk 'JDK-17'          // configured under Global Tool Configuration
+        // optional: if using MSBuild plugin for older .NET Framework
+        // msbuild 'MSBuild-16.0'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'http://<your-git-server>/your-repo.git'
+                git branch: 'main', url: 'http://<your-git-server>/your-dotnet-repo.git'
+            }
+        }
+
+        stage('Restore Dependencies') {
+            steps {
+                sh 'dotnet restore'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'mvn clean install -DskipTests'
+                sh 'dotnet build --configuration Release'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh 'dotnet test --no-build --configuration Release'
             }
         }
 
-        stage('Package') {
+        stage('Publish') {
             steps {
-                sh 'mvn package'
+                sh 'dotnet publish -c Release -o ./publish'
             }
         }
 
         stage('Deploy to Staging') {
             steps {
-                echo 'Deploying application to staging server...'
-                // Example deployment step:
-                sh 'scp target/myapp.jar user@staging-server:/opt/apps/'
+                echo 'Deploying .NET app to staging server...'
+                // Example deployment step (adjust paths/servers as needed)
+                sh 'scp -r ./publish/* user@staging-server:/var/www/my-dotnet-app/'
             }
         }
     }
 
     post {
         always {
-            junit 'target/surefire-reports/*.xml'
-            archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+            junit '**/TestResults/*.xml'   // capture test results if available
+            archiveArtifacts artifacts: 'publish/**', fingerprint: true
         }
     }
 }
