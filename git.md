@@ -109,14 +109,6 @@ without specifying the remote branch.
 ---
 
 
-
-
-
-
-
-
-
-
 ### Handling Non-Fast-Forward Pushes
 
 Sometimes, when you try to push a local branch to a remote branch, Git may reject the push with a **non-fast-forward** error:
@@ -129,7 +121,6 @@ Updates were rejected because a pushed branch tip is behind its remote counterpa
 ````
 
 This happens because the **remote branch already contains commits** that your local branch does not have. Git prevents the push to avoid overwriting history on the remote.
-
 #### How to Fix
 
 ````
