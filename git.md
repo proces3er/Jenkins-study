@@ -1,6 +1,4 @@
-Sure! Here's your content cleaned up and formatted nicely as a Markdown (`.md`) file:
 
-````markdown
 # Git: Upload Local File to Remote Branch `test1`
 
 This guide explains how to upload a local file to a remote GitHub branch (`test1`) using Git CLI.
