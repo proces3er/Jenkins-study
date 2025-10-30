@@ -56,6 +56,77 @@ Pursue further certifications (e.g. cloud practitioner, or scripting-focused cer
 
 
 
+Where do I want to be in 3 years?
+
+In three years, I want to establish myself as a capable and independent Software Developer, confident in delivering high-quality solutions from design to deployment. I aim to be fluent in using DevOps practices and modern development tools to build, test, and maintain scalable systems. I also want to continue improving my technical depth, problem-solving ability, and overall confidence in contributing to larger and more complex projects with minimal supervision.
+
+Identify Career Development Goals
+
+Build strong technical expertise in software development, focusing on clean coding, system design, and automation.
+
+Develop advanced knowledge and practical experience in DevOps tools and practices (e.g., CI/CD, containerisation, infrastructure as code).
+
+Strengthen independent problem-solving and decision-making skills to work more autonomously.
+
+Gain deeper understanding of software lifecycle management and end-to-end delivery processes.
+
+Continue developing collaboration and communication skills to work effectively within multidisciplinary teams.
+
+Identify Possible Development Activities
+
+Undertake advanced technical training or certifications in DevOps, cloud computing, or software engineering (e.g., AWS Developer, Docker, Kubernetes, or Terraform).
+
+Work closely with senior developers or DevOps engineers to learn best practices and improve workflow efficiency.
+
+Take responsibility for developing and deploying features independently within existing projects.
+
+Contribute to internal tools or automation initiatives that enhance team productivity.
+
+Participate in coding challenges, hackathons, or open-source projects to broaden problem-solving experience.
+
+Continue to seek feedback and mentorship to refine technical and professional capabilities.
+
+Stay current with new technologies and software trends through ongoing learning and professional development.
+
+
+
+
+
+
+
+Where do I want to be in 5 years?
+
+In five years, I want to be an experienced Software Developer with a strong specialisation in DevOps. I aim to have deep technical expertise across development, deployment, and automation practices, and be confident in designing, building, and maintaining efficient, scalable systems. I also want to contribute to monitoring and enhancing systems, mentoring newer team members, and supporting continuous improvement within the organisation.
+
+Identify Career Development Goals
+
+Take ownership of critical systems and services, ensuring reliability, scalability, and performance.
+
+Lead initiatives to improve deployment pipelines, automation, and operational efficiency.
+
+Develop expertise in system monitoring, troubleshooting, and incident management.
+
+Build capability in coaching and mentoring newer team members to strengthen team performance.
+
+Drive continuous improvement by identifying gaps and proposing solutions for process and workflow optimisation.
+
+Gain exposure to cross-functional strategy discussions to understand how technical decisions impact organisational goals.
+
+Identify Possible Development Activities
+
+Lead projects focused on automation, CI/CD, and system optimisation.
+
+Participate in incident response and system monitoring activities to gain hands-on operational experience.
+
+Mentor junior developers or new graduates and support their onboarding.
+
+Attend advanced workshops or training in system architecture, DevOps, and cloud operations.
+
+Contribute to internal process improvement initiatives, including workflow redesign and knowledge sharing.
+
+Collaborate with cross-functional teams to understand broader organisational goals and align technical work with strategic objectives.
+
+Stay updated on emerging DevOps tools, practices, and industry trends to bring innovation into the team.
 
 
 
@@ -82,6 +153,10 @@ Limit your response to 200 words or less
 
 
 
+In my graduate role, I consistently ensure that my work aligns with the broader objectives of the Department. When contributing to digital solutions, I actively consider how my tasks support team and organisational goals, such as improving operational efficiency through ServiceNow automation and data reporting. I engage with stakeholders to understand their needs and anticipate potential challenges, helping to inform project planning and decision-making. For example, by identifying workflow inefficiencies and proposing practical solutions, I have contributed to smoother operations and better outcomes for end-users. I also collaborate closely with team members, sharing insights and progress updates to maintain alignment with project objectives. Through these activities, I not only complete my individual responsibilities but also support the strategic direction of the team by thinking ahead, highlighting potential risks, and suggesting improvements. This approach demonstrates my ability to link day-to-day tasks with broader organisational priorities, while actively participating in planning and problem-solving processes.
+
+
+
 
 
 
@@ -99,7 +174,7 @@ Behaviour
 Manage priorities, meet deadlines and adapt to changing demands.
 
 
-
+In my graduate role, I focus on delivering high-quality work while making the best use of the resources and tools available. I plan my tasks carefully, set clear priorities, and communicate regularly with stakeholders to make sure deadlines are met. For example, when developing dashboards and reports in ServiceNow, I often needed to balance competing priorities and adapt to changes in project requirements. I stay flexible when unexpected challenges arise, quickly adjusting my approach to keep work on track. By paying attention to progress and finding practical solutions to problems, I make sure my work meets team and organisational expectations. This experience has helped me build the ability to manage my workload effectively, respond to changing demands, and consistently deliver results.
 
 
 
@@ -123,7 +198,7 @@ Work cooperatively, value diversity and respect different perspectives
 
 
 
-
+In my graduate role, I actively work to build and maintain effective relationships with both colleagues and stakeholders. During my first rotation in ServiceNow, I collaborated closely with team members and end-users to understand their needs and ensure solutions met their requirements. In my current rotation with the Gunnery team, I work as a software developer alongside technical and operational staff to design and develop a new application. I make an effort to listen to different perspectives, value diversity, and work cooperatively to achieve shared goals. By fostering open communication, showing respect for others’ expertise, and supporting my team wherever possible, I contribute to a positive and productive work environment. These experiences have helped me strengthen my ability to work effectively across teams and with a variety of stakeholders.
 
 
 
@@ -144,7 +219,7 @@ Take responsibility for action, be resilient and seek development.
 
 
 
-
+In my graduate role, I consistently strive to demonstrate professionalism and a strong work ethic. I take responsibility for my tasks and ensure they are completed to a high standard, whether it involves analysing business requirements, improving workflows, or contributing to the design and development of new applications. I approach challenges with resilience, adapting to changing requirements or unexpected issues, and I consistently look for ways to expand my programming knowledge to improve the quality and performance of my work. By being accountable, persistent, and committed to ongoing growth, I contribute positively to my team and uphold the standards expected within the organisation.
 
 
 
@@ -163,3 +238,7 @@ Capability
 Communicate clearly and tailor messages to the audience.
 Behaviour
 Listen actively, engage others respectfully and present information confidently.
+
+
+
+In my current rotation, I focus on communicating technical information clearly and in a way that is accessible to different audiences. I make an effort to explain technical terms in plain language and clearly outline changes or updates to previous users, helping to improve their experience and interaction with the software. I also actively listen to feedback and questions, engage respectfully with colleagues and stakeholders, and present information in a confident and structured manner. By adapting my communication style to suit the audience, I help build understanding, foster collaboration, and ensure that both technical and non-technical stakeholders are well-informed and able to make the most of the software.
