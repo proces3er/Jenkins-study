@@ -242,3 +242,11 @@ Listen actively, engage others respectfully and present information confidently.
 
 
 In my current rotation, I focus on communicating technical information clearly and in a way that is accessible to different audiences. I make an effort to explain technical terms in plain language and clearly outline changes or updates to previous users, helping to improve their experience and interaction with the software. I also actively listen to feedback and questions, engage respectfully with colleagues and stakeholders, and present information in a confident and structured manner. By adapting my communication style to suit the audience, I help build understanding, foster collaboration, and ensure that both technical and non-technical stakeholders are well-informed and able to make the most of the software.
+
+
+
+
+
+
+
+I apply a structured and analytical approach to problem-solving by breaking down complex issues into manageable components, validating assumptions with system data and logs, and focusing on identifying the root cause rather than applying short-term fixes. I consider the broader operational and user impact of every decision, ensuring that solutions are both technically robust and aligned with business needs. When requirements are unclear, I proactively seek clarification, anticipate edge cases, and document findings to reduce future risk. This mindset allows me to deliver efficient, reliable outcomes in fast-paced technical environments while maintaining clarity and confidence in communication with both technical and non-technical stakeholders.
