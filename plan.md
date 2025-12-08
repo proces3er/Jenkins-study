@@ -246,6 +246,42 @@ In my current rotation, I focus on communicating technical information clearly a
 
 
 
+Feature	Simile	Metaphor
+Type of comparison	Explicit	Implicit
+Uses “like” or “as”	Yes	No
+Clarity	Usually clearer and more direct	Can be more figurative or symbolic
+Impact	Softer, descriptive	Stronger, more vivid
+Use in formal government writing	More common when clarity is required	Used sparingly to avoid ambiguity
+
+Purpose in Writing (Relevant to Government Style)
+Simile
+
+Supports clarity, a core requirement in government communication.
+
+Useful when explaining unfamiliar or complex ideas in simple terms.
+
+Metaphor
+
+Can improve reader engagement.
+
+Should be used carefully, ensuring the meaning remains clear and not overly decorative.
+
+4. Summary Statement
+
+A simile compares one thing to another using “like” or “as,” making the comparison clear and straightforward. A metaphor describes one thing as if it were another, creating a stronger and more figurative expression. Both are forms of figurative language, but similes prioritise clarity, while metaphors prioritise impact.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
